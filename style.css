@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    font-family: "Inter", sans-serif;
+    overflow-x: hidden;
+}
+
+ul{
+    list-style-type: none;
+    margin-left: -15px;
+    overflow: hidden;
+}
+ ul li a {
+    text-decoration: none;
+    color: #222222e7;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    line-height: 20px;
+ }
+
+
+ .navigation{
+    position: fixed;
+    height: 100%;
+    width: 250px;
+    overflow: hidden;
+    border-right: 1px soild #e7e3e3 !important;
+ }
+ .navigation ul li:nth-child(1){
+    pointer-events: none;
+    margin-top: 20px;
+    
+
+ }
+ 
+ .navigation ul li h1{
+    color: #1c64f2;
+ }
+
+ .navigation ul li .title{
+    font-size: 14px;
+ }
+ 
+ .navigation ul li .icons{
+    font-size: 25px;
+    margin-right: 15px;
+ }
+ .navigation ul li{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 50px;
+ }
+
+ .navigation ul li:hover{
+    background-color: #1c64f2;
+    width: 90%;
+    height: 50px;
+    border-radius: 12px;
+    line-height: 20px;
+ }
+
+ .navigation ul li:hover a{
+  color: #fff;  
+ }
+
+ .main{
+    position: absolute;
+    width:calc(100% - 250px);
+    left:250px;
+    min-height: 100vh;
+    border-left: 1px solid #dee2e6;
+ }
+
+.topbar{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 10px;
+    margin: 20px 20px;
+ }
+ .main-middle{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px 20px;
+ }
+
+ .main-middle h1{
+
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+ }
+ .main-middle h1::after{
+position: absolute;
+   content: "";
+   height: 30px;
+   width: 1px;
+   background-color:#dee2e6;
+   margin-left: 30px;
+ }
+ .btn{
+    font-size: 12px !important;
+ }
+ table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr{
+    border: 1px solid #e7e3e3;
+  }
+  th{
+    background-color: #f2f2f261;
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+  }
+  td{
+    font-size: 12px;
+  }
+  td, th {
+    text-align: left;
+    padding: 8px;
+  }
+  .table-result{
+    padding: 25px 20px;
+  }
+  .search{
+    width:20% !important;
+  }
+  .search-form{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  input:focus{
+    outline: none;
+  }
+  .user{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #dee2e6;
+    border-bottom: 1px solid #dee2e6;
+    padding: 12px 20px;
+
+  }
+
+  .user h1{
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 40px;
+    margin-bottom: 0px !important;
+  }
+
+  .user h1::after{
+    position: absolute;
+   content: "";
+   height: 30px;
+   width: 1px;
+   background-color:#dee2e6;
+   margin-left: 30px;
+  }
+
+  .left-icon::after{
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: 54px;
+    margin-top: -12px;
+    background-color:#dee2e6;
+    margin-left: 20px;
+  }
+
+  .left-icon{
+    color: #dee2e6;
+    font-size: 30px !important;
+  }
+
+  .form-name{
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    gap:10px;
+    width: 100%;
+  }
+  
+  .label-form{
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 100px;
+  }
+  .label-select{
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+
+.form-box{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+    border: 1px solid #e7e3e3;
+    max-width: 80%;
+    padding: 20px;
+    margin: 30px;
+    border-radius: 10px;
+}
+.form-title{
+    font-size:22px;
+    font-weight: 500;
+}
+.form-para{
+    font-size: 14px;
+    font-weight: 400;
+    color: #222222c5;
+    margin-bottom: 30px;
+}
+.form-email{
+  display: flex;
+  align-items: center;
+}
+
+.form-password{
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.pwd-form{
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.form-conform{
+  width: 100%;
+}
+.form-mobile{
+  font-size: 14px;
+  font-weight: 400;
+}
+.btn-save{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.btnn{
+  padding: 6px 25px;
+}
+.form-label{
+font-size: 14px;
+font-weight: 400;
+}
+.form-control {
+  font-size: 12px;
+  
+}
+.form-select{
+  font-size: 12px;
+  color: #6c757d;
+}
+.top-icon{
+  color: #484848;
+}
+.record{
+  font-size: 14px;
+  color: #222222c5;
+}
+td:nth-child(1){
+  color: #1c64f2;
+}
+.toggle{
+position: relative;
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+
+.navigation.active{
+  width: 70px;
+}
+
+.main.active{
+  width: calc(100% - 70px);
+  left: 70px;
+}
+
+.navigation.active h1{
+  display: none;
+}
+
+
+
+@media (max-width:480px){
+  html,body{
+    overflow-x: hidden;
+  }
+
+  .navigation{
+    width: 100%;
+    left: -100%;
+    
+  }
+  .main{
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+
+  .navigation.active{
+    width: 100%;
+    left: 0;
+  }
+  .main.active{
+    width: 100%;
+    left: -100%;
+    background-color: #fff;
+} 
+.toggle{
+  z-index: 10001;
+}
+.main.active .toggle{
+  position: fixed;
+  right: 20px;
+} 
+
+
+.search {
+  width: 70% !important;
+} 
+.form-name{
+  display: grid;
+  margin: 10px 0px;
+}
+.form-first{
+  width: 100% !important;
+}
+
+.form-select{
+  width: 100% !important;
+}
+.email-width{
+  width: 100%;
+  margin-left: 0 !important;
+}
+.form-password{
+  display: grid;
+  margin-bottom: 20px;
+}
+.psd-form {
+  width: 100%;
+}
+.btnn{
+  width: 100%;
+}
+
+}
+
+@media (max-width:768px){
+  .navigation{
+    width: 100%;
+    left: -100%; 
+  }
+  .main{
+    position: absolute;
+    left: 0;
+    width: 100%;
+  }
+  .navigation.active{
+    width: 100%;
+    left: 0;
+  }
+  .main.active{
+    width: 100%;
+    left: -100%;
+    background-color: #fff;
+} 
+.toggle{
+  z-index: 10001;
+}
+.main.active .toggle{
+  position: fixed;
+  right: 20px;
+}
+.form-box{
+  max-width: 100%;
+}
+.psd-form {
+  width: 100%;
+}
+
+
+}
